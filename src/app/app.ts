@@ -1,12 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { Ngs1000Separator } from 'ngs-1000-separator';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Ngs1000Separator],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('ngs-1000-separator');
 }
